@@ -1,0 +1,72 @@
+.chat
+    font-family: 'Nunito'
+    display: inline-flex
+    flex-direction: column
+    align-items: center
+    background: #c7c7c7
+    border-radius: 10px
+    padding: 5px 10px 0
+    box-shadow: 0 10px 0 #a2a2a2
+    transform: rotateX(5deg)
+    &__wrap
+        perspective: 1000px
+        display: flex
+        justify-content: center
+    *:focus
+        outline: 0
+    &__window
+        background: #fafafa
+        height: 400px
+        width: 400px
+        box-shadow: 0 5px 3px rgba(0,0,0,.3), inset 0 3px 0 2px #a2a2a2
+        border-radius: 10px
+        border: 5px solid #c7c7c7
+        padding: 8px 8px
+        margin-bottom: 15px
+    &__window-inner
+        display: flex
+        flex-direction: column
+        overflow: auto
+        height: 100%
+        appearance: none
+    &__message
+        min-width: 200px
+        max-width: 350px
+        padding: 5px 15px
+        border: 1px solid #72a071
+        border-radius: 5px
+        margin-bottom: 5px
+        &:first-child
+            margin-top: auto
+        &_received
+            background: #fff
+            margin-right: auto
+        &_sent
+            margin-left: auto
+            background: #b2e6b2
+    &__input-panel
+        box-sizing: border-box
+        width: 100%
+        display: flex
+        padding: 0 5px 25px
+    &__input
+        margin-right: 20px
+        flex-grow: 1
+        border-radius: 10px
+        border: 1px solid #a2a2a2
+        box-shadow: 0 2px 0 #a2a2a2
+    &__send
+        position: relative
+        background: #15cc2a
+        height: 40px
+        width: 40px
+        border: none
+        border-radius: 50%
+        cursor: pointer
+        border: 3px solid #20ac30
+        box-shadow: 0 2px 0 #20ac30
+        &:active
+            top: 2px
+            box-shadow: 0 0 0 #20ac30
+
+
